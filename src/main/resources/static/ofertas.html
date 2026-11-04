@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
+    <title>Ofertas</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Ecommerce 🛒</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ofertas.html">Ofertas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./formLogin.html"
+                tabindex="-1"
+                aria-disabled="true"
+                >Admin</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Lista de Productos en stock</h1>
+      <button class="btn btn-primary mb-3" onclick="window.location.href='./formAlta.html'">Agregar Producto</button>
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="number"
+          id="buscador"
+          class="form-control mb-3"
+          placeholder="Ingrese el ID del producto..."
+        />
+        <button class="btn btn-secondary mb-3" id="buscar">Buscar</button>
+      </div>
+      <div class="card shadow">
+        <div class="card-body">
+          <table
+            class="table table-striped table-hover table-bordered align-middle"
+          >
+            <thead class="table-dark">
+              <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Categoría</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+
+            <tbody id="tabla-productos">
+              <tr><td colspan="7" class="text-center">Cargando productos...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark text-light pt-5 pb-3 mt-5">
+      <div class="container">
+        <div class="row">
+          <!-- Información -->
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold">TecnoStore</h5>
+            <p class="text-secondary">
+              Tu tienda online de tecnología. Encontrá los mejores productos al
+              mejor precio y con envío a todo el país.
+            </p>
+          </div>
+          <div class="col-md-2 mb-4">
+            <h5>Información</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./ofertas.html"
+                  class="text-decoration-none text-secondary"
+                  >Productos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./ofertas.html"
+                  class="text-decoration-none text-secondary"
+                  >Ofertas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./nosotros.html"
+                  class="text-decoration-none text-secondary"
+                  >Nosotros</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5>Categorías</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./ofertas.html"
+                  class="text-decoration-none text-secondary"
+                  >Celulares</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./ofertas.html"
+                  class="text-decoration-none text-secondary"
+                  >Notebooks</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./ofertas.html"
+                  class="text-decoration-none text-secondary"
+                  >Accesorios</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./ofertas.html"
+                  class="text-decoration-none text-secondary"
+                  >Gaming</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <h5>Contacto</h5>
+            <p class="text-secondary mb-1">📧 contacto@tecnostore.com</p>
+            <p class="text-secondary mb-1">📞 +54 11 1234-5678</p>
+            <p class="text-secondary">📍 Buenos Aires, Argentina</p>
+          </div>
+        </div>
+
+        <hr class="border-secondary" />
+
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+        >
+          <p class="mb-2 mb-md-0 text-secondary">
+            © 2026 TecnoStore. Todos los derechos reservados.
+          </p>
+
+          <div>
+            <a href="#" class="text-light me-3">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="text-light me-3">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="text-light">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a603e5cdee.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
