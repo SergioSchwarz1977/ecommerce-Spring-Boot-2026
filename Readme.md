@@ -4,8 +4,9 @@ Aplicación web sencilla para administrar el catálogo de una tienda de tecnolog
 
 ## Tecnologías
 
-- Java 21
+- Java 25 (LTS)
 - Spring Boot 4.1.2
+- Docker
 - Spring Web MVC y Spring Data JPA
 - MySQL
 - HTML, CSS, JavaScript y Bootstrap 5
@@ -13,8 +14,11 @@ Aplicación web sencilla para administrar el catálogo de una tienda de tecnolog
 
 ## Requisitos
 
-- JDK 21
+- JDK 25
+- Docker
 - MySQL en ejecución
+
+La aplicación se ejecutará en un contenedor Docker.
 
 ## Configuración de MySQL
 
